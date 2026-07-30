@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safari Connect Tours</title>
+    <meta name="description" content="Book unforgettable tours with Safari Connect Tours." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <a href="#home" class="brand">Safari Connect Tours</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#booking">Book</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero-content" id="home">
+        <div class="hero-text">
+          <p class="eyebrow">Curated travel experiences</p>
+          <h1>Explore the world in comfort and style.</h1>
+          <p>From mountain escapes to coastal adventures, discover tours tailored for every kind of traveler.</p>
+          <div class="hero-actions">
+            <a href="#packages" class="btn btn-primary">View Packages</a>
+            <a href="#booking" class="btn btn-secondary">Book Now</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>120+</strong><span>Destinations</span></div>
+            <div><strong>4.9/5</strong><span>Traveler Rating</span></div>
+            <div><strong>24/7</strong><span>Support</span></div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section about" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About Us</p>
+          <h2>Travel planning made simple</h2>
+        </div>
+        <div class="about-grid">
+          <div>
+            <p>Safari Connect Tours crafts unforgettable journeys with local guides, seamless logistics, and handpicked accommodations.</p>
+          </div>
+          <div class="about-card">
+            <h3>Why travelers choose us</h3>
+            <ul>
+              <li>Flexible itineraries</li>
+              <li>Transparent pricing</li>
+              <li>Trusted local partners</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section packages" id="packages">
+        <div class="section-heading">
+          <p class="eyebrow">Tour Packages</p>
+          <h2>Popular adventures</h2>
+        </div>
+        <div class="package-grid">
+          <article class="package-card">
+            <h3>Maasai Mara Safari</h3>
+            <p>3 Days / 2 Nights • From KSh 18,999 pp</p>
+            <span>Game drives & bush dinners</span>
+          </article>
+          <article class="package-card">
+            <h3>Amboseli National Park</h3>
+            <p>2 Days / 1 Night • From KSh 15,999 pp</p>
+            <span>Elephant views & scenic landscapes</span>
+          </article>
+          <article class="package-card">
+            <h3>Tsavo East & West</h3>
+            <p>3 Days / 2 Nights • From KSh 22,999 pp</p>
+            <span>Wildlife adventure & comfort</span>
+          </article>
+          <article class="package-card">
+            <h3>Samburu National Reserve</h3>
+            <p>3 Days / 2 Nights • From KSh 24,999 pp</p>
+            <span>Rare wildlife & desert scenery</span>
+          </article>
+          <article class="package-card">
+            <h3>Lake Nakuru National Park</h3>
+            <p>2 Days / 1 Night • From KSh 16,999 pp</p>
+            <span>Flamingos & rhino sightings</span>
+          </article>
+          <article class="package-card">
+            <h3>Lake Naivasha & Hell's Gate</h3>
+            <p>2 Days / 1 Night • From KSh 12,999 pp</p>
+            <span>Boat rides & cycling adventure</span>
+          </article>
+          <article class="package-card">
+            <h3>Diani Beach Holiday</h3>
+            <p>3 Days / 2 Nights • From KSh 21,999 pp</p>
+            <span>Beach escape & ocean fun</span>
+          </article>
+          <article class="package-card">
+            <h3>Watamu Escape</h3>
+            <p>3 Days / 2 Nights • From KSh 23,999 pp</p>
+            <span>Coral reef & coastal relaxation</span>
+          </article>
+          <article class="package-card">
+            <h3>Mount Kenya Trek</h3>
+            <p>4 Days / 3 Nights • From KSh 29,999 pp</p>
+            <span>Mountain trails & highland views</span>
+          </article>
+          <article class="package-card">
+            <h3>Aberdare National Park</h3>
+            <p>2 Days / 1 Night • From KSh 17,999 pp</p>
+            <span>Forest trails & wildlife</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section booking" id="booking">
+        <div class="section-heading">
+          <p class="eyebrow">Book Your Tour</p>
+          <h2>Reserve your next getaway</h2>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <div class="form-row">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-row">
+            <input type="text" id="destination" placeholder="Destination" required />
+            <input type="date" id="date" required />
+          </div>
+          <textarea id="notes" rows="4" placeholder="Tell us about your travel style"></textarea>
+          <button type="submit" class="btn btn-primary">Confirm Booking</button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s plan your perfect tour</h2>
+        </div>
+        <div class="contact-box">
+          <div>
+            <h3>Visit us</h3>
+            <p>Nairobi, Kenya</p>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <p>danielndungu.com</p>
+          </div>
+          <div>
+            <h3>Phone</h3>
+            <p>0727516972</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Safari Connect Tours. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
